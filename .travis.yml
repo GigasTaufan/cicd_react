@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- stable
+cache:
+  directories:
+  - node_modules
+script:
+- npm test
+- npm run build
+deploy:
+  deploy: 
+  provider: heroku
+  app: ci-cd-react-app
+  api_key:
+    secure: pnxS0t0rF0nP78OkjL3M4QaN9P8FyUlYBqsWldZUdm14bg6l5qib4SUqqSn22uYdUghs77aXMJn2O0u7ubDfHWGH//pL9lnlyLYu31wydLh7TOgDB207k6Flyruj3Jad8A6pBayjz0KfS48vJ1PBrsYXTOKGvuvvrpJ49Rpg+/O+iyvuGgvWfEriWf3oHTeFGOXoOs+1DNOAmVIUrS2sOBLueXEwDHfixnUgrhxEqek0I7qTVOtN3Ya+OsIyHdmODSGA4tTD2BA279RbG2w358XJ5asMF6C6A2tDzUTkcJunlydFV6VKA4vTQaLMWtrHznpLhVy31qDCWC3oymJQN5fA67VS8CaSC+HLRhBUa6X52sNBEEwPqKPBDTiGISFL2PlKOA76CYfb820kYzImIvnABXXMM+wxZmP76IIs17gJrzXacdkeVfPyom0/Wrw6/lO9X6jcrlV9OjWXkFbj6GtCs6q6yxQFly/uoXndAajVYDQsUFhdx500PYoHgXpR3UFV6tWOTLdhkGPkDaa+bpb5Eqwm+JtcGgW9VFjN3MFy4w9Ut5k6n83x/FMFbkkY9UbVVUQaQqbirT8bbLFIj6ai9jgWHyN8THB9PP1KO6bQfW2jO1bqlGBUxijHL8gqyJ28LVoVFboGLFfKBsLRRmTeTjK7HHri2mhh9zB0Wd0=
